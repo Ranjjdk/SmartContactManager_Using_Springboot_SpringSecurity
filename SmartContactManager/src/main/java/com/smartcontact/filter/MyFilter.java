@@ -35,8 +35,8 @@ public class MyFilter implements Filter {
             ServletResponse response,
             FilterChain chain
     ) throws IOException, ServletException {
-        System.out.println("+++++++++++Filter++++++++++"+request.getContentType());
-        System.out.println("+++++++++++Filter++++++++++"+request.getProtocol());
+        System.out.println("+++++++++++Filter0++++++++++"+request.getContentType());
+        System.out.println("+++++++++++Filter0++++++++++"+request.getProtocol());
         chain.doFilter(request, response);
         System.out.println("+++++++++Response++++++++++++++"+response.getContentType());
     }
